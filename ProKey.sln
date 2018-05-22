@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProKey.DataLayer", "ProKey.DataLayer\ProKey.DataLayer.csproj", "{D5C7E4DC-F8A4-44C7-84C1-C1050E4627C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProKey.DomainClasses", "ProKey.DomainClasses\ProKey.DomainClasses.csproj", "{E1F511A8-AC6B-48C9-B953-83F50AB709FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProKey.IocConfig", "ProKey.IocConfig\ProKey.IocConfig.csproj", "{74D125CD-1AB2-4738-9F4B-683B859A3C27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProKey.Model", "ProKey.Model\ProKey.Model.csproj", "{B494382B-DA82-439A-B27D-766752BCB3EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProKey.ServiceLayer", "ProKey.ServiceLayer\ProKey.ServiceLayer.csproj", "{FACB64F7-E1B7-46E2-9838-E371CD340D13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProKey.Web", "ProKey.Web\ProKey.Web.csproj", "{C4DB9F29-0595-4A51-8256-A852DA0E53EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{158A3A03-2A6E-4257-B53A-022FB6D59FF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSocket", "WebSocket\WebSocket.csproj", "{08774E52-1B91-4710-A411-EF500A2D3E74}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5C7E4DC-F8A4-44C7-84C1-C1050E4627C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5C7E4DC-F8A4-44C7-84C1-C1050E4627C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5C7E4DC-F8A4-44C7-84C1-C1050E4627C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5C7E4DC-F8A4-44C7-84C1-C1050E4627C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1F511A8-AC6B-48C9-B953-83F50AB709FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1F511A8-AC6B-48C9-B953-83F50AB709FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1F511A8-AC6B-48C9-B953-83F50AB709FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1F511A8-AC6B-48C9-B953-83F50AB709FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74D125CD-1AB2-4738-9F4B-683B859A3C27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74D125CD-1AB2-4738-9F4B-683B859A3C27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74D125CD-1AB2-4738-9F4B-683B859A3C27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74D125CD-1AB2-4738-9F4B-683B859A3C27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B494382B-DA82-439A-B27D-766752BCB3EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B494382B-DA82-439A-B27D-766752BCB3EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B494382B-DA82-439A-B27D-766752BCB3EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B494382B-DA82-439A-B27D-766752BCB3EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FACB64F7-E1B7-46E2-9838-E371CD340D13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FACB64F7-E1B7-46E2-9838-E371CD340D13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FACB64F7-E1B7-46E2-9838-E371CD340D13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FACB64F7-E1B7-46E2-9838-E371CD340D13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4DB9F29-0595-4A51-8256-A852DA0E53EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4DB9F29-0595-4A51-8256-A852DA0E53EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4DB9F29-0595-4A51-8256-A852DA0E53EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4DB9F29-0595-4A51-8256-A852DA0E53EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08774E52-1B91-4710-A411-EF500A2D3E74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08774E52-1B91-4710-A411-EF500A2D3E74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08774E52-1B91-4710-A411-EF500A2D3E74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08774E52-1B91-4710-A411-EF500A2D3E74}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{08774E52-1B91-4710-A411-EF500A2D3E74} = {158A3A03-2A6E-4257-B53A-022FB6D59FF8}
+	EndGlobalSection
+EndGlobal

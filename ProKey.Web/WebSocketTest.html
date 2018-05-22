@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Websocket test</title>
+    <script type="text/javascript" src="Scripts/jquery-3.3.1.min.js"></script>
+    <style>
+        .client {
+            color: royalblue;
+        }
+        .admin {
+            color: forestgreen;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h2>WebSocket</h2>
+        <input type="text" class="message">
+        <input type="submit" class="send" value="send">
+        <ul class="list">
+        </ul>
+    </div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var socket;
+        try {
+            if ("WebSocket" in window) {
+                console.log('WebSocket is supported by your browser.');
+
+                var serviceUrl = 'ws://127.0.0.1:2356';
+                var protocol = 'Chat-1.0';
+                socket = new WebSocket(serviceUrl, protocol);
+
+                socket.onopen = function () {
+                    console.log('Connection Established!');
+                };
+
+                socket.onclose = function () {
+                    console.log('Connection Closed!');
+                };
+
+                socket.onerror = function (error) {
+                    console.log('Error Occured: ' + error);
+                };
+
+                socket.onmessage = function (e) {
+                    if (typeof e.data === "string") {
+                        console.log('String message received: ' + e.data);
+                        $('.list').append(`<li class="admin">${e.data}</li>`);
+                        
+                    }
+                    else if (e.data instanceof ArrayBuffer) {
+                        console.log('ArrayBuffer received: ' + e.data);
+                        $('.list').append(`<li class="admin">${e.data}</li>`);
+                    }
+                    else if (e.data instanceof Blob) {
+                        console.log('Blob received: ' + e.data);
+                        $('.list').append(`<li class="admin">${e.data}</li>`);
+                    }
+                };
+
+                socket.send("Hello WebSocket!");
+                socket.close();
+            }
+        } catch (error) {
+            console.log('error : ' + error);
+        }
+
+        $('.send').click(function () {
+            var msg = $('.message').val();
+            socket.send(msg);
+            $('.list').append(`<li class="client">Client: ${msg} </li>`);
+        });
+
+    });
+    </script>
+</body>
+</html>
